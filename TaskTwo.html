@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird</title>
+    <style>
+        body {
+            background-image: url(images/back.jpg);
+            background-size: cover;
+
+
+        }
+
+        #bird {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+          cursor: pointer;
+
+        }
+
+
+
+
+
+        .notshow {
+            display: none;
+        }
+        div{
+            text-align: center;
+            margin: auto;
+            width: 140px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div> <span>Killed: <span id="score">0</span></span></div>
+    <img id="bird" src="images/bird1.gif" />
+    <script src="TaskTwo.js"></script>
+    <script>
+
+        moveBird(document.images[0], 0, 0)
+
+    </script>
+
+</body>
